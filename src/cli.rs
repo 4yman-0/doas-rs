@@ -13,7 +13,7 @@ pub fn cmd() -> Command {
                     arg!(command: <COMMAND> ... "Command to run")
                         .required(true)
                         .value_parser(value_parser!(String)),
-                    arg!(user: -u -user <USER> "Arguments to pass to command")
+                    arg!(user: -u --user <USER> "Arguments to pass to command")
                         .required(false)
                         .value_parser(value_parser!(String)),
                     arg!(config: -C --config [config] "Path to config file")
